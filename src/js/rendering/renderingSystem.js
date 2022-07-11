@@ -4,7 +4,7 @@ import {RenderingComponent} from "./renderingComponent";
 import {PositionComponent} from "../world/positionComponent";
 
 export class RenderingSystem extends System {
-    init() {
+    init(attributes) {
         //SCENE
         this.scene = new THREE.Scene();
 
@@ -37,6 +37,7 @@ export class RenderingSystem extends System {
     addNewToScene() {
         this.queries.entities.added.forEach(entity => {
             let rc = entity.getComponent(RenderingComponent)
+            console.log(rc)
             this.scene.add(rc.mesh)
         });
     }

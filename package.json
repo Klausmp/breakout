@@ -13,6 +13,7 @@
   "dependencies": {
     "ecsy": "^0.4.2",
     "ecsy-three": "^0.1.3",
+    "matter-js": "^0.18.0",
     "renderer": "^0.1.5",
     "three": "^0.141.0"
   },
